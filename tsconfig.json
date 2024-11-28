@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // Target ECMAScript version (ES5 ensures compatibility)
+    "target": "ES5",
+    
+    // Specifies the module code generation (ESNext for modern JavaScript module syntax)
+    "module": "ESNext",
+    
+    // Specify library files to include (e.g., ESNext for modern JavaScript, DOM for React Native)
+    "lib": ["ESNext"],
+    
+    // Enable JSX and specify the JSX factory (React)
+    "jsx": "react",
+    
+    // TypeScript will resolve modules using Node.js style resolution
+    "moduleResolution": "node",
+    
+    // Allows synthetic default imports (import React from 'react')
+    "allowSyntheticDefaultImports": true,
+    
+    // Enable ESModule interoperability for CommonJS and ESModule imports
+    "esModuleInterop": true,
+    
+    // Skips type checking of all declaration files
+    "skipLibCheck": true,
+    
+    // Generates declaration files (.d.ts) for type definitions
+    "declaration": true,
+    
+    // Output directory for compiled JavaScript and type declaration files
+    "outDir": "./lib",
+    
+    // Enforces strict type checking options
+    "strict": true,
+    
+    // Isolates each module to its own file (needed for React Native)
+    "isolatedModules": true,
+    
+    // Prevents emitting any JavaScript code (if you are only interested in type checking)
+    "noEmit": false
+  },
+  
+  // Include all TypeScript and TSX files from the src directory
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  
+  // Exclude node_modules and test files from the build
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.test.tsx"]
+}
